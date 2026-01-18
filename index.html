@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Commenter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header >
+        <h1>AI Code Commenter</h1>
+        <p>Automatically add meaningful comments to your code to help beginners understand</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input-section">
+                <div class="language-selector">
+                    <label for="language">Select Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <textarea id="input-code" placeholder="Paste your code here..."></textarea>
+            </div>
+
+            <div class="output-section">
+                <button id="run-button">Run Commenter</button>
+                <textarea id="output-code" placeholder="Commented code will appear here..." readonly></textarea>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Code Commenter. Built with ❤️ for developers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
